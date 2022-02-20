@@ -39,7 +39,7 @@ class Container implements ContainerInterface, ArrayAccess, IteratorAggregate, C
      * @var Container|Closure
      */
     protected static $instance;
-    
+
     /**
      * 容器绑定标识
      * @var array

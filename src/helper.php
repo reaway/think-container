@@ -12,7 +12,7 @@ declare (strict_types=1);
 
 use Think\Component\Container\Container;
 
-if (!function_exists('app')) {
+if (!function_exists('container')) {
     /**
      * 快速获取容器中的实例 支持依赖注入
      * @param string $name 类名或标识 默认获取当前应用实例
@@ -20,7 +20,7 @@ if (!function_exists('app')) {
      * @param bool $newInstance 是否每次创建新的实例
      * @return object
      */
-    function app(string $name = '', array $args = [], bool $newInstance = false)
+    function container(string $name = '', array $args = [], bool $newInstance = false)
     {
         return $name ? Container::getInstance()->make($name, $args, $newInstance) : Container::getInstance();
     }
