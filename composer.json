@@ -1,0 +1,26 @@
+{
+  "name": "reaway/think-container",
+  "type": "library",
+  "description": "think container",
+  "keywords": [],
+  "homepage": "https://github.com/reaway/think-container",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "reaway",
+      "email": "reaway@foxmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "psr/container": "^2.0",
+    "topthink/think-helper": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Think\\Component\\Container\\": "src/"
+    },
+    "files": [
+    ]
+  }
+}
